@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dog Care</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/service.css">
+    <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon" />
+  </head>
+  <body >
+    <div class="outer-container" onclick="hideList()">
+      <div class="container">
+        <div class="inner-container">
+          <!-- ---------------------------- Navbar ------------------------- -->
+
+          <div class="navbar" >
+            <nav>
+              <div class="brand-logo">
+                <img src="../image/logo.png" alt="Logo" />
+                <a href="../index.html"><span>Dog Care</span></a>
+              </div>
+              <div class="nav-ul">
+                <ul>
+                  <li class="nav-item">
+                    <a href="../index.html" class="nav-links ">Home</a>
+                  </li>
+                  <li
+                    class="nav-item"
+                    onmouseover="displayList()"
+                    onclick="displayList()"
+                    style="position: relative;color: rgb(125, 125, 253);"
+                  >
+                    Services <i class="fa-solid fa-angle-down"></i>
+                    <ul class="sublist" style="display: none">
+                      <li>
+                        <a href="#vaccine">Vaccination</a>
+                      </li>
+                      <hr />
+                      <li>
+                        <a href="#parasite">Parasite Control</a>
+                      </li>
+                      <hr />
+                      <li>
+                        <a href="#grooming">Grooming</a>
+                      </li>
+                      <hr />
+                      <li>
+                        <a href="#dental">Dental Care</a>
+                      </li>
+                      <hr />
+                      <li>
+                        <a href="#medication">Medication</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../html/about.html" class="nav-links">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../html/contact.html" class="nav-links">Contact us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../html/login.html" class="nav-links">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../html/register.html" class="nav-links">Register</a>
+                  </li>
+                </ul>
+              </div>
+              <button
+                class="toggle"
+                style="opacity: 1 !important; z-index: 10"
+                onclick="handleChange()"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </nav>
+          </div>
+          <!-- ---------------------------- Intro ------------------------- -->
+          <div class="top-container" style="margin: 5%;">
+              <div class="about">
+                  <h2 class="welcome">Services Offered</h2>
+                  <div class="services" id="vaccine">
+                      <div class="heading">
+                          <div class="element1"><h3>Vaccinations</h3></div>
+                          <div class="element2"></div>
+                      </div>
+                      <div class="detail-container">
+                          <div class="img"><img src="../image/vaccine.jpg" alt="vaccine"></div>
+                          <div class="content"><p>Vaccination is a key component of preventive medicine in dogs, just as in people. Vaccinations are given to stimulate the immune system against infection before exposure to a disease. Several vaccines are routinely given to dogs as the core defense against serious infectious illness (for example, distemper, parvovirus, rabies). Several others (referred to as noncore) are important in certain regions and situations (for example, Bordetella, Lyme disease). Your veterinarian can advise which vaccines are necessary in your local area and circumstances.</p></div>
+                      </div>
+                  </div>
+                  <div class="services" id="parasite">
+                    <div class="heading">
+                        <div class="element2"></div>
+                        <div class="element1"><h3>Parasite Control</h3></div>
+                    </div>
+                    <div class="detail-container">
+                        <div class="content"><p>The primary intestinal parasites of dogs include roundworms, hookworms, whipworms, and tapeworms. These worms damage the digestive tract or interfere with absorption of essential nutrients, or both. Intestinal parasite infections are diagnosed by finding worm eggs (or sometimes actual worms or worm segments) in fecal samples. Fecal samples should be tested periodically (yearly or on the schedule recommended by your veterinarian) in all dogs and more frequently in puppies, which are especially prone to parasite infection. These worms usually do not cause intestinal infection in people; however, hookworm infections leading to abdominal pain and inflammation have developed in people with weakened immune systems.</p></div>
+                        <div class="img"> <img src="../image/common-dog-parasites.jpg" alt="parasite"></div>
+                    </div>
+                </div>
+                <div class="services" id="grooming">
+                    <div class="heading">
+                        <div class="element1"><h3>Grooming</h3></div>
+                        <div class="element2"></div>
+                    </div>
+                    <div class="detail-container">
+                        <div class="img"><img src="../image/grooming.jpg" alt="grooming"></div>
+                        <div class="content"><p>Your dog’s hair coat should be brushed regularly to remove shed hair and prevent hair mats. Grooming is especially important for dogs with thick or shaggy hair coats that mat or tangle easily. Mats can irritate the skin, and the moist, stuffy conditions underneath them leaves the skin more susceptible to bacterial or parasite infections. Mats should be removed with electric clippers (not scissors) to avoid cutting the skin underneath. Periodic bathing with a pet shampoo is also important for maintaining healthy skin and fur. However, excessive bathing can irritate and dry the skin and hair. On average, most dogs do not need to be bathed more than once a month, depending on time of year and weather conditions.</p></div>
+                    </div>
+                </div>
+                <div class="services" id="dental">
+                    <div class="heading">
+                        <div class="element2"></div>
+                        <div class="element1"><h3>Dental Care</h3></div>
+                    </div>
+                    <div class="detail-container">
+                        <div class="content"><p>Dogs need dental attention throughout their lives. You can help keep your dog’s teeth and gums in good condition by feeding dry food, providing certain toys (for example, “flossie”-style bones), brushing your dog’s teeth regularly, and following a program of professional dental cleanings and oral care performed by your veterinarian. Good dental care reduces the development of plaque which, if untreated, can progress to gingivitis and periodontal disease. In severe cases of dental disease, extraction is common.</p></div>
+                        <div class="img"><img src="../image/dental.jpg" alt="dental"></div>
+                    </div>
+                </div>
+                <div class="services" id="medication">
+                    <div class="heading">
+                        <div class="element1"><h3>Medication</h3></div>
+                        <div class="element2"></div>
+                    </div>
+                    <div class="detail-container">
+                        <div class="img"><img src="../image/medication.jpg" alt="medication"></div>
+                        <div class="content"><p>Pills and chewable medications are usually relatively easy to administer to dogs. Most dogs will readily eat a pill that is hidden in a small treat, such as a piece of cheese or a bit of peanut butter. Sometimes, gently holding the dog’s muzzle closed until you are sure that it has swallowed can be helpful. Liquid medications are sometimes prescribed, particularly for puppies. Liquids can be given via a syringe into the rear of the dog’s mouth by inserting the tip of the syringe near the back teeth on either side. Holding the dog’s head pointing partially upward can help prevent spills. Spot-on products or other topical medications are administered directly on the coat or skin. If your dog needs eye drops or ear medication, your veterinarian or veterinary technician will give you a demonstration.</p></div>
+                    </div>
+                </div>
+              </div>
+          </div>
+      <!-- ---------------------------- Sidebar nav ------------------------- -->
+      <div class="hide hide-sidebar" id="sidebar-nav">
+        <div class="brand-logo">
+          <img src="../image/logo.png" width="40" alt="Logo" />
+          <a href="../index.html"><span>Dog Care</span></a>
+        </div>
+        <hr />
+        <div class="sidebar-ul">
+          <ul>
+            <li class="sidebar-item">
+              <a href="../index.html" class="sidebar-link ">Home</a>
+            </li>
+            <li class="sidebar-item service" style="color: rgb(125, 125, 253);" onclick="sideBarSublist()">
+              Services <i class="fa-solid fa-angle-down"></i>
+              <ul class="sidebar-sublist hide compress" onclick="handleChange()">
+                <li>
+                  <a href="#vaccine">Vaccination</a>
+                </li>
+                <li>
+                  <a href="#parasite">Parasite Control</a>
+                </li>
+                <li>
+                  <a href="#grooming">Grooming</a>
+                </li>
+                <li>
+                  <a href="#dental">Dental Care</a>
+                </li>
+                <li>
+                  <a href="#medication">Medication</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a href="../html/about.html" class="sidebar-link">About Us</a>
+            </li>
+            <li class="sidebar-item">
+              <a href="../html/contact.html" class="sidebar-link">Contact Us</a>
+            </li>
+            <li class="sidebar-item">
+              <a href="../html/login.html" class="sidebar-link">Login</a>
+            </li>
+            <li class="sidebar-item">
+              <a href="../html/register.html" class="sidebar-link">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- ---------------------------- Footer ------------------------- -->
+      <div class="footer">
+        <hr />
+        <div class="navigation">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../html/about.html">About Us</a></li>
+            <li><a href="../html/contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <hr class="hr" />
+        <div class="socials">
+          <a href="http://www.facebook.com">
+            <div class="social-icon">
+              <i class="fa-brands fa-facebook-f"></i></div
+          ></a>
+          <a href="http://www.instagram.com">
+            <div class="social-icon"><i class="fa-brands fa-instagram"></i></div
+          ></a>
+          <a href="http://www.linkedin.com">
+            <div class="social-icon">
+              <i class="fa-brands fa-linkedin-in"></i></div
+          ></a>
+          <a href="http://twitter.com">
+            <div class="social-icon"><i class="fa-brands fa-twitter"></i></div
+          ></a>
+        </div>
+        <hr class="hr" />
+        <div class="copyright">Copyright &copy; <span class="year"></span></div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/2a97ce5e57.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dog Care</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="outer-container" onclick="hideList()">
+      <div class="container">
+        <div class="inner-container">
+          <!-- ---------------------------- Navbar ------------------------- -->
+
+          <div class="navbar">
+            <nav>
+              <div class="brand-logo">
+                <img src="image/logo.png" alt="Logo" />
+                <a href="index.html"><span>Dog Care</span></a>
+              </div>
+              <div class="nav-ul">
+                <ul>
+                  <li class="nav-item">
+                    <a href="/index.html" class="nav-links active">Home</a>
+                  </li>
+                  <li
+                    class="nav-item"
+                    onmouseover="displayList()"
+                    onclick="displayList()"
+                    style="position: relative"
+                  >
+                    Services <i class="fa-solid fa-angle-down"></i>
+                    <ul class="sublist" style="display: none">
+                      <li>
+                        <a href="html/service.html#vaccine">Vaccination</a>
+                      </li>
+                      <hr />
+                      <li>
+                        <a href="html/service.html#parasite">Parasite Control</a>
+                      </li>
+                      <hr />
+                      <li>
+                        <a href="html/service.html#grooming">Grooming</a>
+                      </li>
+                      <hr />
+                      <li>
+                        <a href="html/service.html#dental">Dental Care</a>
+                      </li>
+                      <hr />
+                      <li>
+                        <a href="html/service.html#medication">Medication</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="html/about.html" class="nav-links">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="html/contact.html" class="nav-links">Contact us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="html/login.html" class="nav-links">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="html/register.html" class="nav-links">Register</a>
+                  </li>
+                </ul>
+              </div>
+              <button
+                class="toggle"
+                style="opacity: 1 !important; z-index: 10"
+                onclick="handleChange()"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </nav>
+          </div>
+          <!-- ---------------------------- Intro ------------------------- -->
+          <div class="top-container">
+            <div class="intro">
+              <div class="intro-container">
+                <h1>A new Perspective of</h1>
+                <h1>Dog Care</h1>
+                <br />
+                <a href="html/register.html">Book Slot</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------- Downloads ------------------------- -->
+      <div class="downloads">
+        <h1>Get Best Service</h1>
+        <div class="buttons">
+          <div class="appStore">
+            <button class="btn" id="btn1">
+              <i class="fa-brands fa-apple"></i> &nbsp; Download
+            </button>
+          </div>
+          <div class="playStore">
+            <button class="btn" id="btn2">
+              <i class="fa-brands fa-google-play"></i> &nbsp; Download
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------- Sidebar nav ------------------------- -->
+      <div class="hide hide-sidebar" id="sidebar-nav">
+        <div class="brand-logo">
+          <img src="image/logo.png" width="40" alt="Logo" />
+          <a href="index.html"><span>Dog Care</span></a>
+        </div>
+        <hr />
+        <div class="sidebar-ul">
+          <ul>
+            <li class="sidebar-item">
+              <a href="index.html" class="sidebar-link active">Home</a>
+            </li>
+            <li class="sidebar-item service" onclick="sideBarSublist()">
+              Services <i class="fa-solid fa-angle-down"></i>
+              <ul class="sidebar-sublist hide compress">
+                <li>
+                  <a href="html/service.html#vaccine">Vaccination</a>
+                </li>
+                <li>
+                  <a href="html/service.html#parasite">Parasite Control</a>
+                </li>
+                <li>
+                  <a href="html/service.html#grooming">Grooming</a>
+                </li>
+                <li>
+                  <a href="html/service.html#dental">Dental Care</a>
+                </li>
+                <li>
+                  <a href="html/service.html#medication">Medication</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a href="html/about.html" class="sidebar-link">About Us</a>
+            </li>
+            <li class="sidebar-item">
+              <a href="html/contact.html" class="sidebar-link">Contact Us</a>
+            </li>
+            <li class="sidebar-item">
+              <a href="html/login.html" class="sidebar-link">Login</a>
+            </li>
+            <li class="sidebar-item">
+              <a href="html/register.html" class="sidebar-link">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- ---------------------------- Footer ------------------------- -->
+      <div class="footer">
+        <hr />
+        <div class="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="html/about.html">About Us</a></li>
+            <li><a href="html/contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <hr class="hr" />
+        <div class="socials">
+          <a href="http://www.facebook.com">
+            <div class="social-icon">
+              <i class="fa-brands fa-facebook-f"></i></div
+          ></a>
+          <a href="http://www.instagram.com">
+            <div class="social-icon"><i class="fa-brands fa-instagram"></i></div
+          ></a>
+          <a href="http://www.linkedin.com">
+            <div class="social-icon">
+              <i class="fa-brands fa-linkedin-in"></i></div
+          ></a>
+          <a href="http://twitter.com">
+            <div class="social-icon"><i class="fa-brands fa-twitter"></i></div
+          ></a>
+        </div>
+        <hr class="hr" />
+        <div class="copyright">Copyright &copy; <span class="year"></span></div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/2a97ce5e57.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

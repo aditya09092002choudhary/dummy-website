@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dog Care</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="outer-container" onclick="hideList()">
+      <div class="container">
+        <div class="inner-container">
+          <!-- ---------------------------- Navbar ------------------------- -->
+
+          <div class="navbar">
+            <nav>
+              <div class="brand-logo">
+                <img src="../image/logo.png" alt="Logo" />
+                <a href="../index.html"><span>Dog Care</span></a>
+              </div>
+              <div class="nav-ul">
+                <ul>
+                  <li class="nav-item">
+                    <a href="../index.html" class="nav-links ">Home</a>
+                  </li>
+                  <li
+                    class="nav-item"
+                    onmouseover="displayList()"
+                    onclick="displayList()"
+                    style="position: relative"
+                  >
+                    Services <i class="fa-solid fa-angle-down"></i>
+                    <ul class="sublist" style="display: none">
+                      <li>
+                        <a href="../html/service.html#vaccine">Vaccination</a>
+                      </li>
+                      <hr />
+                      <li>
+                        <a href="../html/service.html#parasite">Parasite Control</a>
+                      </li>
+                      <hr />
+                      <li>
+                        <a href="../html/service.html#grooming">Grooming</a>
+                      </li>
+                      <hr />
+                      <li>
+                        <a href="../html/service.html#dental">Dental Care</a>
+                      </li>
+                      <hr />
+                      <li>
+                        <a href="../html/service.html#medication">Medication</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-links active">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../html/contact.html" class="nav-links">Contact us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../html/login.html" class="nav-links">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../html/register.html" class="nav-links">Register</a>
+                  </li>
+                </ul>
+              </div>
+              <button
+                class="toggle"
+                style="opacity: 1 !important; z-index: 10"
+                onclick="handleChange()"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </nav>
+          </div>
+          <!-- ---------------------------- Intro ------------------------- -->
+          <div class="top-container">
+            <h1>About Us</h1>
+              <div class="aim">
+                <div class="heading">Aim & Motivation</div>
+                <hr>
+                <div class="content">
+                  <ul>
+                    <li>To provide a healty life to all the Dogs. </li>
+                    <li>To build connection between dogs and human.</li>
+                    <li>Motivate people to domesticate a dog.</li>
+                    <li>To make dogs life easier.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="about">
+                <div class="heading">About Organization</div>
+                <hr>
+                <div class="content">
+                  <div class="image"><img src="../image/dogs-group.jpg" alt="dogs-group"></div>
+                  <div><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi sed in laudantium at nam fuga mollitia cupiditate nemo, nesciunt repellat dolorem quasi similique odio quam quae culpa? Iure neque suscipit necessitatibus temporibus et nostrum error id doloremque nesciunt, ducimus at ipsum commodi aperiam qui esse, praesentium aspernatur corporis optio quibusdam repellendus omnis ex. Laboriosam illum, ea officia voluptates voluptas minima alias blanditiis cupiditate suscipit error? Velit ullam reiciendis molestiae ut.</p> </div>
+                </div>
+              </div>
+              <div class="about-author">
+                <div class="heading">About Author</div>
+                <hr>
+                <div class="content">
+                  <div class="image"><img src="../image/author.jpg" alt="author"></div>
+                  <div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit esse quam ab ut libero vitae, maxime similique rerum aliquam eos, repudiandae sapiente perspiciatis, commodi voluptatum nesciunt. Modi animi nam illo eveniet incidunt! Soluta repellendus necessitatibus reiciendis corporis quod eum voluptatibus ad fugit asperiores quia tenetur consequatur labore ipsam harum libero exercitationem iure omnis et, accusamus nulla suscipit! Iste, veritatis impedit.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+      <!-- ---------------------------- Sidebar nav ------------------------- -->
+      <div class="hide hide-sidebar" id="sidebar-nav">
+        <div class="brand-logo">
+          <img src="../image/logo.png" width="40" alt="Logo" />
+          <a href="../index.html"><span>Dog Care</span></a>
+        </div>
+        <hr />
+        <div class="sidebar-ul">
+          <ul>
+            <li class="sidebar-item">
+              <a href="../index.html" class="sidebar-link ">Home</a>
+            </li>
+            <li class="sidebar-item service" onclick="sideBarSublist()">
+              Services <i class="fa-solid fa-angle-down"></i>
+              <ul class="sidebar-sublist hide compress">
+                <li>
+                  <a href="../html/service.html#vaccine">Vaccination</a>
+                </li>
+                <li>
+                  <a href="../html/service.html#parasite">Parasite Control</a>
+                </li>
+                <li>
+                  <a href="../html/service.html#grooming">Grooming</a>
+                </li>
+                <li>
+                  <a href="../html/service.html#dental">Dental Care</a>
+                </li>
+                <li>
+                  <a href="../html/service.html#medication">Medication</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a href="../html/about.html" class="sidebar-link active">About Us</a>
+            </li>
+            <li class="sidebar-item">
+              <a href="../html/contact.html" class="sidebar-link">Contact Us</a>
+            </li>
+            <li class="sidebar-item">
+              <a href="../html/login.html" class="sidebar-link">Login</a>
+            </li>
+            <li class="sidebar-item">
+              <a href="../html/register.html" class="sidebar-link">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- ---------------------------- Footer ------------------------- -->
+      <div class="footer">
+        <hr />
+        <div class="navigation">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="../html/contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <hr class="hr" />
+        <div class="socials">
+          <a href="http://www.facebook.com">
+            <div class="social-icon">
+              <i class="fa-brands fa-facebook-f"></i></div
+          ></a>
+          <a href="http://www.instagram.com">
+            <div class="social-icon"><i class="fa-brands fa-instagram"></i></div
+          ></a>
+          <a href="http://www.linkedin.com">
+            <div class="social-icon">
+              <i class="fa-brands fa-linkedin-in"></i></div
+          ></a>
+          <a href="http://twitter.com">
+            <div class="social-icon"><i class="fa-brands fa-twitter"></i></div
+          ></a>
+        </div>
+        <hr class="hr" />
+        <div class="copyright">Copyright &copy; <span class="year"></span></div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/2a97ce5e57.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

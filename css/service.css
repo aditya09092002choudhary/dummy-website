@@ -1,0 +1,97 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.top-container{
+    border-radius: 10px;
+}
+.about{
+    padding: 10px;
+    border-radius:10px ;
+}
+
+.about h2{
+    margin-left: 20px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace  ;
+    text-decoration: underline dashed;
+}
+
+.services .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2px;
+    color: lightcoral;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.services .heading .element1{
+    white-space: nowrap;
+    text-align: center;
+}
+.services .heading h3{
+    text-shadow: 5px 5px 10px #101820ff;
+}
+.services .heading .element2{
+    width: 80%;
+    border-bottom: 1px solid #101820ff;
+    height: 0px;
+}
+
+.services .detail-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px 30px;
+    column-gap: 20px;
+}
+
+.services .detail-container .img{
+    width: 40%;
+    background-color: #101820ff;
+    height: 40vh;
+    border-radius:10px ;
+    padding: 4px;
+}
+.services .detail-container .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.services .detail-container .content{
+    width: 55%;
+    background-color: #101820ff;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    font-family: system-ui;
+    font-size: 14px;
+}
+
+@media screen and (max-width:700px) {
+    .about h2{
+        text-align: center;
+    }
+
+    .services .heading h3{
+        font-size: 1.1rem;
+    }
+    .services .detail-container{
+        flex-direction: column;
+        row-gap: 20px;
+        column-gap: 0;
+        padding: 5px ;
+    }
+    .services .detail-container .img{
+        width: 65%;
+        height: 25vh;
+        order: 1;
+    }
+    .services .detail-container .content{
+        width: 99%;
+        order: 2;
+    }
+}
