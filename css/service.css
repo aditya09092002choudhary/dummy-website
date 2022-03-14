@@ -4,17 +4,17 @@ html{
 
 .top-container{
     border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 .about{
     padding: 10px;
     border-radius:10px ;
 }
 
-.about h2{
-    margin-left: 20px;
-    color: white;
-    font-family: 'Courier New', Courier, monospace  ;
-    text-decoration: underline dashed;
+.about h1{
+    margin-left: 5px;
+    color: #fee715ff;
 }
 
 .services .heading{
@@ -72,8 +72,9 @@ html{
 }
 
 @media screen and (max-width:700px) {
-    .about h2{
+    .about h1{
         text-align: center;
+        font-size: 1.6rem;
     }
 
     .services .heading h3{
@@ -86,8 +87,8 @@ html{
         padding: 5px ;
     }
     .services .detail-container .img{
-        width: 65%;
-        height: 25vh;
+        width: 80%;
+        height: 28vh;
         order: 1;
     }
     .services .detail-container .content{
