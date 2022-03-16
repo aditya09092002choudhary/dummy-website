@@ -129,8 +129,9 @@ body {
     width: 95%;
   }
   .inner-container .form-container{
-      border-radius: 5px;
-      background: linear-gradient(to left,#233145,rgb(28, 28, 54),#233145 );
+      border-radius: 5px;      
+      background: linear-gradient(to left,#233145,rgb(39, 39, 73),#233145 );
+
   }
   .welcome-heading h1 {
     line-height: 1.3;
