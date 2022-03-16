@@ -50,6 +50,7 @@ body {
   text-align: center;
   line-height: 2 !important;
   font-family: 'Supermercado One', cursive;
+  color: var(--yellow-color);
   /* width: 70%; */
 }
 
@@ -79,6 +80,7 @@ body {
   text-align: start;
   padding: 10px;
   resize: none;
+  border-radius: 5px;
 }
 
 .err {
@@ -128,6 +130,7 @@ body {
   }
   .inner-container .form-container{
       border-radius: 5px;
+      background: linear-gradient(to left,#233145,rgb(28, 28, 54),#233145 );
   }
   .welcome-heading h1 {
     line-height: 1.3;
