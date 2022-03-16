@@ -13,7 +13,9 @@ html{
 }
 
 .about h1{
-    margin-left: 5px;
+    text-align: center;
+    line-height: 2 !important;
+    font-family: 'Supermercado One', cursive;
     color: #fee715ff;
 }
 

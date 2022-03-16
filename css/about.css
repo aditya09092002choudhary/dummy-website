@@ -1,13 +1,16 @@
 .top-container{
-    margin :5%;
+    margin :5% auto;
     color: white;
     padding: 7px 40px;
     border-radius: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 70%;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 .top-container h1{
-    margin-left: -20px;
+    text-align: center;
+    line-height: 2 !important;
+    font-family: 'Supermercado One', cursive;
     color: #fee715ff;
 }
 
@@ -29,7 +32,11 @@
 }
 
 .content p{
+    width: 80%;
+    margin: 20px auto;
     text-align: center;
+    font-size: 14px;
+    border-radius: 10px;
 }
 
 .top-container .content .image{
@@ -50,8 +57,9 @@
     .top-container{
         padding: 4px;
         margin: 4%;
+        width: 90%;
         border-radius: 5px;
-      background: linear-gradient(to left,#233145,rgb(28, 28, 54),#233145 );
+      background: linear-gradient(to left,#233145,rgb(39, 39, 73),#233145 );
 
     }
     .top-container h1{
@@ -71,5 +79,8 @@
     }
     .top-container .content{
         border-color: #101820ff;
+    }
+    .content p{
+        width: 90%;
     }
 }
