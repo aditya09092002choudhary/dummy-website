@@ -31,6 +31,8 @@ html {
   box-sizing: border-box;
 }
 
+/* ---------------------------- Navbar ----------------------------- */
+
 .inner-container .brand-logo,
 .sidebar-nav .brand-logo,
 .hide-sidebar .brand-logo {
@@ -166,6 +168,9 @@ ul li a.active {
   background: #233145;
   margin-bottom: 5%;
 }
+
+/* -------------------------------- Main ------------------------------ */
+
 .intro {
   /* margin: var(--margin); */
   margin-top: 3%;
@@ -232,6 +237,8 @@ ul li a.active {
   display: none;
 }
 
+/*  ------------------------------ Download Button ----------------------- */
+
 .downloads {
   background: linear-gradient(to right, #101820ff, #233145, #101820ff);
   margin: var(--margin);
@@ -262,6 +269,9 @@ button#btn2 {
   border: none;
   color: #233142;
 }
+
+/* ------------------------------------- Sidebar-nav--------------- */
+
 .sidebar-nav {
   display: unset;
   position: absolute;
@@ -365,10 +375,12 @@ button#btn2 {
   font-family: system-ui;
 }
 
+/* ----------------------------- Footer -------------------------- */
+
 .footer {
   background: #233142;
   padding-bottom: 5px;
-  box-shadow: 0 0 5px white;
+  /* box-shadow: 0 0 5px white; */
 }
 .footer hr {
   border: 1px solid rgb(44, 44, 44);
@@ -398,6 +410,22 @@ button#btn2 {
   color: gray;
   white-space: nowrap;
 }
+.footer .connect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+.footer .connect .bar{
+  border-top: 1px solid var(--yellow-color);
+  width: 10%;
+  border-radius: 100px;
+}
+.footer p{
+  text-align: center;
+  color: var(--yellow-color);
+  font-size: .8rem;
+}
 .footer .socials {
   display: flex;
   justify-content: center;
@@ -405,6 +433,7 @@ button#btn2 {
 .footer .socials a {
   text-decoration: none;
 }
+
 
 .socials .social-icon {
   border: 1px solid #ddd;
@@ -422,9 +451,10 @@ button#btn2 {
 .copyright {
   text-align: center;
   color: gray;
+  margin: 20px auto;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 800px) {
   .inner-container .brand-logo img {
     width: 40px;
   }
@@ -476,6 +506,9 @@ button#btn2 {
   .footer .navigation ul li {
     margin: 0 10px;
   }
+  .footer .connect .bar{
+    width: 20%;
+  }
   .socials .social-icon {
     width: 20px;
     height: 20px;
@@ -484,6 +517,6 @@ button#btn2 {
   }
   .copyright {
     font-size: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 }

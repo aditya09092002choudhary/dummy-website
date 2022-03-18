@@ -5,6 +5,8 @@ html{
 .top-container{
     border-radius: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 78%;
+    margin: 5% auto;
 
 }
 .about{
@@ -50,9 +52,9 @@ html{
 }
 
 .services .detail-container .img{
-    width: 40%;
+    width:35%;
     background-color: #101820ff;
-    height: 40vh;
+    height: 30vh;
     border-radius:10px ;
     padding: 4px;
 }
@@ -103,7 +105,10 @@ html{
     }
 }
 
-@media screen and (min-width:550px) and (max-width:1000px) {
+@media screen and (min-width:550px) and (max-width:1100px) {
+    .top-container{
+        width: 85%;
+    }
     .about h1{
         font-size: 1.8rem;
     }

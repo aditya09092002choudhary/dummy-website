@@ -33,7 +33,11 @@ function validate(e){
             usernameErr.innerHTML ="Invalid Email, try again!";
         }
         if(password.value.trim().length<8){
-            passwordErr.innerHTML = "Password length must be atleast 8, try again !"
+            if(password.value.trim().length===0){
+                passwordErr.innerHTML = "Please enter your password !"
+            } else {
+                passwordErr.innerHTML = "Password length must be atleast 8, try again !"
+            }
         } 
     } else {
         window.location = "../index.html";

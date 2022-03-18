@@ -85,7 +85,7 @@ body {
 }
 
 .err {
-  color: red;
+  color: rgb(255, 134, 134);
   font-size: 13px;
 }
 
