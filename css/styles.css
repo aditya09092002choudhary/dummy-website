@@ -207,7 +207,7 @@ ul li a.active {
 
 @keyframes slideIn {
   0% {
-    left: -500px;
+    left: -900px;
   }
   100% {
     left: 0;
@@ -290,7 +290,7 @@ button#btn2 {
     left: 0;
   }
   100% {
-    left: -500px;
+    left: -900px;
   }
 }
 .dim {

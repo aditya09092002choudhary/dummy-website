@@ -13,7 +13,7 @@ html{
 }
 
 .about h1{
-    text-align: center;
+    /* text-align: center; */
     line-height: 2 !important;
     font-family: 'Supermercado One', cursive;
     color: #fee715ff;
@@ -73,7 +73,7 @@ html{
     font-size: 14px;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:800px) {
     .top-container {
         border-radius: 5px;
     }
@@ -102,3 +102,13 @@ html{
         border-radius: 5px;
     }
 }
+
+@media screen and (min-width:550px) and (max-width:1000px) {
+    .about h1{
+        font-size: 1.8rem;
+    }
+    .services .detail-container .img{
+        max-width: 57%;
+        height: 27vh;
+    }
+  }
